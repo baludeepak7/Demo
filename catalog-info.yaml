@@ -1,17 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
-  name: petstore
-  description: My pet-store API
-  owner: myteam
+  name: pet
+  description: The pet API
   tags:
-    - api
+    - store
+    - rest
 spec:
   type: openapi
   lifecycle: experimental
-  owner: myteam
-  providesApis:
-    - spotify
- 	    id: petstore
-      specPath: openapi.yaml
-      lifecycle: experimental
+  owner: team-c
+  path: openapi.yaml
