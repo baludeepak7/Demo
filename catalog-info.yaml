@@ -10,4 +10,4 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: team-c
-  path: openapi.yaml
+  definition: openapi.yaml
