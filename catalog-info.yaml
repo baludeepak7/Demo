@@ -10,4 +10,5 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: team-c
-  definition: openapi.yaml
+  definition:
+     $openapi: https://github.com/baludeepak7/Demo/edit/main/openapi.yaml
