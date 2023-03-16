@@ -11,5 +11,6 @@ spec:
   owner: alice
   providesApis:
     - swagger: '2.0'
-      base: 'https://example.com'
-      schemaPath: 'openapi.yaml'
+      repositoryUrl: 'https://github.com/baludeepak7/Demo/blob/main'
+      path: 'openapi.yaml'
+      format: 'yaml'
