@@ -1,16 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
-  name: my-api
-  description: My OpenAPI specification
-  annotations:
-    openapi-spec: "3.0.0"
+  name: service-name
+  description:  |
+    Service Description
 spec:
   type: openapi
-  lifecycle: experimental
-  owner: alice
-  providesApis:
-    - swagger: '2.0'
-      repositoryUrl: 'https://github.com/baludeepak7/Demo/blob/main'
-      path: 'openapi.yaml'
-      format: 'yaml'
+  owner: project-owner
+  lifecycle: production
+  system: production
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
