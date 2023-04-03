@@ -1,7 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  # ...
+  name: service-name
+  description:  |
+    Service Description
   annotations:
     kafka.apache.org/consumer-groups: cluster-name/consumer-group-name
 spec:
