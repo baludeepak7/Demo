@@ -7,5 +7,6 @@ metadata:
   annotations:
     kafka.apache.org/consumer-groups: cluster-name/consumer-group-name
 spec:
+  owner: project-owner
   type: service
   lifecycle: production
