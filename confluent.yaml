@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Tomcattopic
+  description: My Confluent Cloud Kafka topic
+spec:
+  type: documentation
+  lifecycle: production
+  owner: my-team
+  system:
+    name: Tomcat_cluster
+    namespace: dev
+  providesApis:
+    - openapi.yaml
+  provides:
+    - type: kafka
+      lifecycle: production
+      config:
+        brokers: pkc-41973.westus2.azure.confluent.cloud:9092
+        securityProtocol: SASL_SSL
+        saslMechanism: PLAIN
+        saslUsername: KPA4CXRN5CTXW62N
+        saslPassword: cC0h/oJkX3jHBXfZfR2OG9HDb8NrgGksn3GxcVmYiegIznpwCinO15XCMsEtet9h
+        topic: Tomcattopic
