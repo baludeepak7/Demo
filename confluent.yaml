@@ -1,15 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-kafka-topic
+  name: Tomcattopic
   description: My Confluent Cloud Kafka topic
 spec:
   type: documentation
   lifecycle: production
   owner: my-team
-  system:
-    name: Tomcat_cluster
-    namespace: dev
+  system: Tomcattopic
   providesApis:
     - openapi.yaml
   provides:
