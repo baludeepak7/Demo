@@ -1,12 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: kafka-confluence-dashboard-url
+  name: kafka-confluence-dashboard-url-latest
   description:  |
     Service Description
   annotations:
+    kafka.apache.org/consumer-groups: confluent/test-consumer-group
     kafka.apache.org/dashboard-urls: http://54.163.15.89:8080
 spec:
   owner: project-owner
-  type: service
+  type: website
   lifecycle: production
