@@ -9,5 +9,5 @@ metadata:
     kafka.apache.org/dashboard-urls: http://54.163.15.89:8080
 spec:
   owner: project-owner
-  type: website
+  type: service
   lifecycle: production
