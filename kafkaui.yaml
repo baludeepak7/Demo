@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: kafka-ui
+  description: My component description
+  annotations:
+    backstage.io/managed-by: backstage
+spec:
+  type: service
+  lifecycle: production
+  owner: my-team
+  providesApis:
+    - swagger
+  relations:
+    - type: kafka
+      target: my-kafka-cluster
+  links:
+    - label: Apache Kafka UI
+      url: http://54.163.15.89:8080
