@@ -5,6 +5,7 @@ metadata:
   description: My component description
   annotations:
     backstage.io/managed-by: backstage
+    kafka.apache.org/consumer-groups: "enabled"
 spec:
   type: service
   lifecycle: production
