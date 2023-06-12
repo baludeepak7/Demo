@@ -5,7 +5,7 @@ metadata:
   description: |
     Backstage is an open-source developer portal that puts the developer experience first.
   annotations:
-    sonarqube.org/project-key: demo
+    sonarqube.org/project-key: com.binpipe.spboot:demo
 spec:
   type: library
   owner: CNCF
