@@ -3,4 +3,4 @@ kind: Component
 metadata:
   name: backstage
   annotations:
-    sonarqube.org/project-key: default/demo
+    sonarqube.org/project-key: demo
