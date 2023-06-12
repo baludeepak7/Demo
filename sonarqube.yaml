@@ -2,5 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage
+spec:
+  type: service
+  lifecycle: production
+  owner: deepak
   annotations:
     sonarqube.org/project-key: demo
