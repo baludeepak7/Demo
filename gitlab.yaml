@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mvp-pet-store
+  annotations:
+    gitlab.com/project-id: '46817621'
+spec:
+  type: service
+  lifecycle: production
+  owner: john.doe@example.com
+  description: |
+    This is a sample service component in Backstage.
+    It represents a backend service for an application.
