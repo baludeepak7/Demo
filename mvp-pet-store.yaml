@@ -25,3 +25,18 @@ spec:
   type: sonar
   owner: Deepak Baluswamy
   lifecycle: production
+  
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: mvp-pet-store
+  description:  |
+    mvp-pet-store api component to display openapi specifications
+spec:
+  type: openapi
+  owner: Deepak Baluswamy
+  lifecycle: production
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
