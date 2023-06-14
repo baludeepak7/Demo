@@ -8,6 +8,7 @@ spec:
   type: gitlab
   lifecycle: production
   owner: Deepak Baluswamy
+  location: gitlab
   description: 
     mvp-pet-store gitlab component to display ci/cd pipelines along with merge requests
 
@@ -23,5 +24,6 @@ metadata:
     sonarqube.org/project-key: com.binpipe.spboot:demo
 spec:
   type: sonar
+  location: sonar
   owner: Deepak Baluswamy
   lifecycle: production
