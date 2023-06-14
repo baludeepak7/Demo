@@ -31,7 +31,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: mvp-pet-store
+  name: mvp-pet-store-api
   description:  |
     mvp-pet-store api component to display openapi specifications
 spec:
