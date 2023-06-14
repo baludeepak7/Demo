@@ -8,7 +8,7 @@ metadata:
     gitlab.com/project-id: '46817621'
     sonarqube.org/project-key: com.binpipe.spboot:demo
     backstage.io/techdocs-ref: dir:.
-	backstage.io/api-docs: |
+    backstage.io/api-docs: |
       - title: mvp-pet-store
         type: openapi
         description: mvp-pet-store API component to display OpenAPI specifications
