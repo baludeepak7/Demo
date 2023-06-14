@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mvp-pet-store
+  description: |
+    mvp-pet-store sonar qube component to display code coverage
+  annotations:
+    sonarqube.org/project-key: com.binpipe.spboot:demo
+spec:
+  type: sonar
+  owner: Deepak Baluswamy
+  lifecycle: production
+  
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mvp-pet-store
+  annotations:
+    gitlab.com/project-id: '46817621'
+spec:
+  type: gitlab
+  lifecycle: production
+  owner: Deepak Baluswamy
+  description: 
+    mvp-pet-store gitlab component to display ci/cd pipelines along with merge requests
