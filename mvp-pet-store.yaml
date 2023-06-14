@@ -5,7 +5,7 @@ metadata:
   annotations:
     gitlab.com/project-id: '46817621'
 spec:
-  type: gitlab
+  type: service
   lifecycle: production
   owner: Deepak Baluswamy
   description: 
