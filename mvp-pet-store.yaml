@@ -1,4 +1,19 @@
 apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: mvp-pet-store
+  description:  |
+    mvp-pet-store api component to display openapi specifications
+spec:
+  type: openapi
+  owner: Deepak Baluswamy
+  lifecycle: production
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: mvp-pet-store
@@ -8,14 +23,9 @@ metadata:
     gitlab.com/project-id: '46817621'
     sonarqube.org/project-key: com.binpipe.spboot:demo
     backstage.io/techdocs-ref: dir:.
-    backstage.io/api-docs: |
-      - title: mvp-pet-store
-        type: openapi
-        description: mvp-pet-store API component to display OpenAPI specifications
-        definition:
-          type: http
-          url: https://github.com/baludeepak7/Demo/raw/main/openapi.yaml
 spec:
   type: service
   lifecycle: production
   owner: Deepak Baluswamy
+  providesApis:
+    - mvp-pet-store
