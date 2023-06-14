@@ -6,51 +6,8 @@ metadata:
     mvp-pet-store gitlab component to display ci/cd pipelines along with merge requests
   annotations:
     gitlab.com/project-id: '46817621'
-spec:
-  type: service
-  lifecycle: production
-  owner: Deepak Baluswamy
-
----
-
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: mvp-pet-store-sonar
-  description: |
-    mvp-pet-store sonar qube component to display code coverage
-  annotations:
-    sonarqube.org/project-key: com.binpipe.spboot:demo
-spec:
-  type: sonar
-  owner: Deepak Baluswamy
-  lifecycle: production
-  
----
-
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: mvp-pet-store-api
-  description:  |
-    mvp-pet-store api component to display openapi specifications
-spec:
-  type: openapi
-  owner: Deepak Baluswamy
-  lifecycle: production
-  definition:
-    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
- 
----
-
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: mvp-pet-store-doc
-  title: mvp-pet-store-doc
-  description: A Service with TechDocs documentation for mvp-pet-store
-  annotations:
-    backstage.io/techdocs-ref: dir:.
+	sonarqube.org/project-key: com.binpipe.spboot:demo
+	backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
