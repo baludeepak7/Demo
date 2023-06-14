@@ -12,3 +12,9 @@ spec:
   type: service
   lifecycle: production
   owner: Deepak Baluswamy
+  apiDocs:
+    - title: mvp-pet-store
+      type: openapi
+      description: mvp-pet-store api component to display openapi specifications
+      definition:
+        $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
