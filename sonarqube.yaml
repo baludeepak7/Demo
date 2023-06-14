@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: mvc-pet-store
+  name: mvp-pet-store
   description: |
     Backstage is an open-source developer portal that puts the developer experience first.
   annotations:
     sonarqube.org/project-key: com.binpipe.spboot:demo
 spec:
-  type: library
-  owner: CNCF
-  lifecycle: experimental
+  type: sonar
+  owner: Deepak Baluswamy
+  lifecycle: production
