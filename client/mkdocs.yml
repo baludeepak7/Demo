@@ -1,0 +1,9 @@
+site_name: 'mvp pet store Documentation'
+repo_url: https://github.com/baludeepak7/Demo/client
+edit_uri: edit/main/docs
+
+nav:
+  - Home: index.md
+  
+plugins:
+  - techdocs-core
