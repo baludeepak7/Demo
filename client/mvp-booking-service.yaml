@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: mvp-booking-service
   description:  |
-    mvp-pet-store api component to display openapi specifications
+    mvp-booking-service api component to display openapi specifications
 spec:
   type: openapi
   owner: Deepak Baluswamy
