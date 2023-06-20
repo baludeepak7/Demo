@@ -20,6 +20,7 @@ metadata:
   description: |
     mvp-pet-store gitlab component to display ci/cd pipelines along with merge requests
   annotations:
+    kafka.apache.org/consumer-groups: confluent/test-consumer-group
     gitlab.com/project-id: '46817621'
     sonarqube.org/project-key: com.binpipe.spboot:demo
     backstage.io/techdocs-ref: dir:.
