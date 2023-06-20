@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: mvp-banking-service
   description:  |
-    mvp-pet-store api component to display openapi specifications
+    mvp-banking-service api component to display openapi specifications
 spec:
   type: openapi
   owner: Deepak Baluswamy
@@ -18,7 +18,7 @@ kind: Component
 metadata:
   name: mvp-banking-service
   description: |
-    mvp-pet-store gitlab component to display ci/cd pipelines along with merge requests
+    mvp-banking-service gitlab component to display ci/cd pipelines along with merge requests
   annotations:
     gitlab.com/project-id: '46817621'
     sonarqube.org/project-key: com.binpipe.spboot:demo
