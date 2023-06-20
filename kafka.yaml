@@ -5,7 +5,7 @@ metadata:
   description:  |
     Service Description
   annotations:
-    kafka.apache.org/consumer-groups: confluent/place-order-topic
+    kafka.apache.org/consumer-groups: confluent/test-consumer-group
 spec:
   owner: project-owner
   type: service
