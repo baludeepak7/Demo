@@ -18,7 +18,7 @@ kind: Component
 metadata:
   name: mvp-funding-service
   description: |
-    mvp-pet-store gitlab component to display ci/cd pipelines along with merge requests
+    mvp-funding-store gitlab component to display ci/cd pipelines along with merge requests
   annotations:
     gitlab.com/project-id: '46817621'
     sonarqube.org/project-key: com.binpipe.spboot:demo
