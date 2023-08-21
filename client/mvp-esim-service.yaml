@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: esim
+  description:  |
+    This API will allow an accessibility record to be created at account level and at user level and update
+spec:
+  type: openapi
+  owner: Subramanyam mekala
+  lifecycle: production
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: esim
+  description: |
+    This API will allow an accessibility record to be created at account level and at user level and update
+  annotations:
+    gitlab.com/project-id: '48501631'
+    sonarqube.org/project-key: com.binpipe.spboot:demo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: Subramanyam Mekala
+  providesApis:
+    - esim
