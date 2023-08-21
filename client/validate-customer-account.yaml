@@ -9,7 +9,7 @@ spec:
   owner: Subramanyam Mekala
   lifecycle: production
   definition:
-    $text: https://github.com/monygeet/ValidateCustomerAccount_1_0/blob/main/openapi.yaml
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
     
 ---
 
