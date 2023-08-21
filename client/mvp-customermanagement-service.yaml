@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: customermanagement
+  description:  |
+    This SOA Federated API is used to apply, remove and get Barrings on the given MPN when requested.
+spec:
+  type: openapi
+  owner: Mohan Chandrashekar
+  lifecycle: production
+  definition:
+    $text: https://github.com/monygeet/CustomerManagement/blob/main/openapi.yaml
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: customermanagement
+  description: |
+    This SOA Federated API is used to apply, remove and get Barrings on the given MPN when requested.
+  annotations:
+    gitlab.com/project-id: '48501569'
+    sonarqube.org/project-key: com.binpipe.spboot:demo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: Mohan Chandrashekar
+  providesApis:
+    - customermanagement
