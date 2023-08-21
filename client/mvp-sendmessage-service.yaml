@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: sendmessage
+  description:  |
+    SendMessage service has operations, which allows sending email to single recipient as well as to send email to multiple recipients, sending SMS to single or multiple MSISDN or sending MMS to a recipient where images, texts are sent as SOAP Attachments.
+spec:
+  type: openapi
+  owner: Subramanyam Mekala
+  lifecycle: production
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sendmessage
+  description: |
+    SendMessage service has operations, which allows sending email to single recipient as well as to send email to multiple recipients, sending SMS to single or multiple MSISDN or sending MMS to a recipient where images, texts are sent as SOAP Attachments.
+  annotations:
+    gitlab.com/project-id: '48501571'
+    sonarqube.org/project-key: com.binpipe.spboot:demo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: Subramanyam Mekala
+  providesApis:
+    - sendmessage
