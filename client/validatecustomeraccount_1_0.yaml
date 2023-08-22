@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ValidateCustomerAccount_1_0
+  description:  |
+    ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
+spec:
+  type: openapi
+  owner: Developer
+  lifecycle: production
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ValidateCustomerAccount_1_0
+  description: |
+    ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
+  annotations:
+    gitlab.com/project-id: '48576071'
+    sonarqube.org/project-key: com.binpipe.spboot:demo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: Developer
+  providesApis:
+    - ValidateCustomerAccount_1_0
