@@ -8,6 +8,7 @@ spec:
   type: openapi
   owner: Developer
   lifecycle: production
+  system: MOBILE
   definition:
     $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
     
@@ -27,5 +28,6 @@ spec:
   type: service
   lifecycle: production
   owner: Developer
+  system: MOBILE
   providesApis:
     - ValidateCustomerAccount_1_0
