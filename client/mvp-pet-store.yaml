@@ -23,7 +23,6 @@ metadata:
     kafka.apache.org/consumer-groups: confluent/test-consumer-group
     gitlab.com/project-id: '46817621'
     sonarqube.org/project-key: com.binpipe.spboot:demo
-    kafka.apache.org/consumer-groups: confluent/test-consumer-group
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
