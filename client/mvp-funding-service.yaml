@@ -20,8 +20,8 @@ metadata:
   description: |
     mvp-funding-store gitlab component to display ci/cd pipelines along with merge requests
   annotations:
-    gitlab.com/project-id: '46817621'
-    sonarqube.org/project-key: com.binpipe.spboot:demo
+    gitlab.com/project-id: '48576071'
+    sonarqube.org/project-key: tmf-customer-management
 spec:
   type: service
   lifecycle: production
