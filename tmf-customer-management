@@ -1,0 +1,188 @@
+      requestBody:
+        description: Customer object to be updated
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+      responses:
+        '200':
+          description: Customer updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '404':
+          description: Customer not found
+    delete:
+      summary: Delete a customer
+      parameters:
+        - name: customerId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Customer deleted
+        '404':
+          description: Customer not found
+
+components:
+  schemas:
+    Customer:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        name:
+          type: string
+        status:
+          type: string
+        account:
+          type: array
+          items:
+            $ref: '#/components/schemas/Account'
+        characteristic:
+          type: array
+          items:
+            $ref: '#/components/schemas/Characteristic'
+        contactMedium:
+          type: array
+          items:
+            $ref: '#/components/schemas/ContactMedium'
+        agreement:
+          type: array
+          items:
+            $ref: '#/components/schemas/Agreement'
+        relatedParty:
+          type: array
+          items:
+            $ref: '#/components/schemas/RelatedParty'
+        customerAccount:
+          type: array
+          items:
+            $ref: '#/components/schemas/CustomerAccount'
+        customerOrder:
+          type: array
+          items:
+            $ref: '#/components/schemas/CustomerOrder'
+    Account:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        name:
+          type: string
+        status:
+          type: string
+        relatedParty:
+          type: array
+          items:
+            $ref: '#/components/schemas/RelatedParty'
+    Characteristic:
+      type: object
+      properties:
+        name:
+          type: string
+        value:
+          type: string
+    ContactMedium:
+      type: object
+      properties:
+        preferred:
+          type: boolean
+        type:
+          type: string
+        characteristic:
+          type: object
+          properties:
+            emailAddress:
+              type: string
+            phoneNumber:
+              type: string
+    Agreement:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        name:
+          type: string
+        type:
+          type: string
+    RelatedParty:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        role:
+          type: string
+        name:
+          type: string
+    CustomerAccount:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        name:
+          type: string
+        status:
+          type: string
+    CustomerOrder:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        orderDate:
+          type: string
+          format: date-time
+        completionDate:
+          type: string
+          format: date-time
+        status:
+          type: string
+        orderItem:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderItem'
+    OrderItem:
+      type: object
+      properties:
+        id:
+          type: string
+        action:
+          type: string
+        product:
+          $ref: '#/components/schemas/Product'
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        name:
+          type: string
+        productSpecification:
+          $ref: '#/components/schemas/ProductSpecification'
+    ProductSpecification:
+      type: object
+      properties:
+        id:
+          type: string
+        href:
+          type: string
+        name:
+          type: string
