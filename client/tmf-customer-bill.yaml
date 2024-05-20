@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: tmf-customer-bill
   description:  |
-    API for managing customer data
+    API for managing customer bill
 spec:
   type: openapi
   owner: Developer
@@ -19,7 +19,7 @@ kind: Component
 metadata:
   name: tmf-customer-bill
   description: |
-    API for managing customer data
+    API for managing customer bill
   annotations:
     gitlab.com/project-id: '48576071'
     sonarqube.org/project-key: tmf-customer-bill
