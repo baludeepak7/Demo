@@ -6,9 +6,9 @@ metadata:
     API for managing customer data
 spec:
   type: openapi
-  owner: Developer
+  owner: Deepak B
   lifecycle: production
-  system: MOBILE
+  system: TMF
   definition:
     $text: https://github.com/baludeepak7/Demo/blob/main/tmf-customer-management.yaml
     
