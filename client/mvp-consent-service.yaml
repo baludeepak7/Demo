@@ -20,8 +20,8 @@ metadata:
   description: |
     This API will allow an accessibility record to be created at account level and at user level
   annotations:
-    gitlab.com/project-id: '48501570'
-    sonarqube.org/project-key: com.binpipe.spboot:demo
+    gitlab.com/project-id: '48576071'
+    sonarqube.org/project-key: tmf-customer-management
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
