@@ -22,7 +22,7 @@ metadata:
     ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
   annotations:
     gitlab.com/project-id: '48576071'
-    sonarqube.org/project-key: com.binpipe.spboot:demo
+    sonarqube.org/project-key: tmf-customer-management
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
