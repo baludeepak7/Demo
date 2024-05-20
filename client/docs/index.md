@@ -1,4 +1,4 @@
-# Pet-Store-Management-System
+# tmf-customer-management
 
 
 - Developed a pet store management console using C++ that manages products at a pet store.
