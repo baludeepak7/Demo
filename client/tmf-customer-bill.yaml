@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: tmf-customer-bill
+  description:  |
+    API for managing customer data
+spec:
+  type: openapi
+  owner: Developer
+  lifecycle: production
+  system: MOBILE
+  definition:
+    $text: https://github.com/baludeepak7/Demo/blob/main/tmf-customer-bill
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tmf-customer-bill
+  description: |
+    API for managing customer data
+  annotations:
+    gitlab.com/project-id: '48576071'
+    sonarqube.org/project-key: tmf-customer-bill
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: Developer
+  system: MOBILE
+  providesApis:
+    - tmf-customer-bill
