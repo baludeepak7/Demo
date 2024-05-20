@@ -6,9 +6,9 @@ metadata:
     API for managing account
 spec:
   type: openapi
-  owner: Developer
+  owner: Hemanth R
   lifecycle: production
-  system: MOBILE
+  system: TMF
   definition:
     $text: https://github.com/baludeepak7/Demo/blob/main/tmf-account-management.yaml
     
@@ -22,12 +22,12 @@ metadata:
     API for managing account
   annotations:
     gitlab.com/project-id: '48576071'
-    sonarqube.org/project-key: tmf-account-management
+    sonarqube.org/project-key: tmf-customer-management
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
-  owner: Developer
-  system: MOBILE
+  owner: Hemanth R
+  system: TMF
   providesApis:
     - tmf-account-management
