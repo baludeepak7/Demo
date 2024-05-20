@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: ValidateCustomerAccount_1_0
+  name: tmf-customer-management
   description:  |
     ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
 spec:
@@ -17,7 +17,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ValidateCustomerAccount_1_0
+  name: tmf-customer-management
   description: |
     ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
   annotations:
@@ -30,4 +30,4 @@ spec:
   owner: Developer
   system: MOBILE
   providesApis:
-    - ValidateCustomerAccount_1_0
+    - tmf-customer-management
