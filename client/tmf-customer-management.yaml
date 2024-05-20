@@ -27,7 +27,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: Developer
-  system: MOBILE
+  owner: Deepak B
+  system: TMF
   providesApis:
     - tmf-customer-management
