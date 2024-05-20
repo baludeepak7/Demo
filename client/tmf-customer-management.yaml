@@ -3,14 +3,14 @@ kind: API
 metadata:
   name: tmf-customer-management
   description:  |
-    ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
+    API for managing customer data
 spec:
   type: openapi
   owner: Developer
   lifecycle: production
   system: MOBILE
   definition:
-    $text: https://github.com/baludeepak7/Demo/blob/main/openapi.yaml
+    $text: https://github.com/baludeepak7/Demo/blob/main/tmf-customer-management
     
 ---
 
@@ -19,7 +19,7 @@ kind: Component
 metadata:
   name: tmf-customer-management
   description: |
-    ValidateCustomerAccount_1_0 allows to validate the customer account to verify if the account is a single subscription account or not.
+    API for managing customer data
   annotations:
     gitlab.com/project-id: '48576071'
     sonarqube.org/project-key: tmf-customer-management
